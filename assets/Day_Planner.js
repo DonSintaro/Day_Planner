@@ -84,6 +84,7 @@ function updateColor(){
 function updateTime(){
     currentRealTime = moment().format("LT");
     currentTimeMT = STtoMT(currentRealTime);
+    console.log(currentTimeMT);
     headerTime();
     updateColor();
 }
@@ -105,12 +106,18 @@ function MTtoST(MT){
     }
 }
 
+
+
+//Alternate to moment().format("H")  same thing;
 function STtoMT(ST){
     var bufferArray1 = ST.split(" ");
     var bufferArray2 = bufferArray1[0].split(":");
 
-    if ((bufferArray1[1] != "12") && (bufferArray1[1] == "PM")){
+    if ((bufferArray2[0] != "12") && (bufferArray1[1] == "PM")){
         return (parseInt(bufferArray2[0]) + 12)*100;
+    }
+    else if (bufferArray2[0] == "12" && bufferArray1[1] == "AM"){
+        return 0000;
     }
     else{
         return (parseInt(bufferArray2[0])*100);
