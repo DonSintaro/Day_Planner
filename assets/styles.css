@@ -1,0 +1,44 @@
+textarea{
+    resize:none;
+}
+
+.sizeTime{
+    width: 80px;
+    text-align: center;
+}
+
+.preHeadingArea{
+    width: 100%;
+    position: absolute;
+    border-bottom: solid black 5px;
+    height: 170px;
+}
+
+.headingArea{
+    text-align: center;
+    margin-bottom: 65px;
+    height: 170px;
+}
+
+.headingA{
+    
+    text-shadow: rgb(177, 177, 177) 3px 3px 3px;
+
+}
+
+#key{
+    text-align: center;
+}
+.past{
+    background-color:rgb(221, 221, 221);
+}
+.present{
+    background-color:rgb(255, 188, 188);
+}
+.future{
+    background-color: rgb(212, 253, 151);
+}
+
+.planner{
+    margin-bottom: 100px;
+}
